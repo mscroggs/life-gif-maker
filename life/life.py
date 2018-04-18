@@ -35,6 +35,9 @@ class Life:
 
         return xmin, xmax, ymin, ymax
 
+    def add(self, pattern, pos=(0,0)):
+        pattern.add(self, pos)
+
     def export(self, filename, limits=None):
         import matplotlib.pylab as plt
         plt.style.use('dark_background')
